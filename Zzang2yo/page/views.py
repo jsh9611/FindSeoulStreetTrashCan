@@ -4,5 +4,5 @@ from django.shortcuts import render
 def main(request):
     return render(request, 'page/main.html')
 
-def maps(request):
+def map(request):
     return render(request, 'page/maps.html')
