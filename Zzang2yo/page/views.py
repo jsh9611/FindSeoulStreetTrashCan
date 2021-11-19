@@ -5,4 +5,5 @@ def main(request):
     return render(request, 'page/main.html')
 
 def map(request):
-    return render(request, 'page/maps.html')
+    return render(request, 'page/map.html')
+
