@@ -9,6 +9,12 @@ from django.core.exceptions import PermissionDenied
 # redirect 오류가 나던 이유 : redirect 를 import 하지 않았다.
 
 
+# 글 삭제 view 추가 11.24
+def PostDelete(request, pk):
+    post = Post.objects.get(id=pk)
+    post.delete()
+    return redirect('/board/')
+
 
 def delete_comment(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
