@@ -65,10 +65,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Zzang2yo.urls'
 
+# TEMPLATES 11.24 변경 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

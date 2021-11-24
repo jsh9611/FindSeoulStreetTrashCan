@@ -1,0 +1,46 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+
+<div id = "container" style = "border : 1px solid #dcdcdc; padding : 5px 20px; position : absolute; top : 50%; left : 50%; width : 500px; height : 250px; margin-left : -270px; margin-top : -170px; display : flex; flex-direction : column; justify-content : center; align-items : center;">
+    <div class = "card cover">
+      <div class = "card-header">
+        <h2>{% blocktrans with site.name as site_name %}다음으로 로그인해주세요.{% endblocktrans %}</h2>
+      </div>
+      <div class = "card-body">
+        <div class="socialaccount_ballot">
+
+          <ul class="socialaccount_providers">
+            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+          </ul>
+        
+          
+        
+        {% include "socialaccount/snippets/login_extra.html" %}
+        
+        {% else %}
+        <p>{% blocktrans %}If you have not created an account yet, then please
+        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+        {% endif %}
+
+      </div>
+
+    
+
+
+
+
+    </div> 
+</div>
+{% endblock %}
