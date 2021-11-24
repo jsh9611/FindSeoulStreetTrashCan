@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('delete/<int:pk>', views.PostDelete, name = 'delete'), # 글 삭제. 11.24 추가
     path('search/<str:q>/', views.PostSearch.as_view()), # board/search/검색어 로 접근하면 PostSearch 에서 처리
     path('delete_comment/<int:pk>/', views.delete_comment), # 댓글 삭제를 위한 URL 추가
     path('update_comment/<int:pk>/', views.CommentUpdate.as_view()), # 댓글 수정 페이지의 경로 추가
