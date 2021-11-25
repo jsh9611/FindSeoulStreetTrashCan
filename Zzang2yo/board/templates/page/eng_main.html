@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
+<html lang = "en">
     <head>
         <title>{% block head_title %}Seoul Street Trash cans Location Service{% endblock %}</title>
         <link rel = "stylesheet" href = "{% static 'board/bootstrap/bootstrap.min.css' %}" media = "screen">
@@ -14,16 +14,16 @@
         <link href="/static/board/css/style1.css" rel="stylesheet" />
 
 
-        <!-- 수정 필요해요 -->
-        <a href="/">한국어</a>
+
+
 
     </head>
     <body>
-      {% include 'board/navbar.html' %}
+      {% include 'board/navbar_eng.html' %}
 
 
 
-<!-- 수정 완료했습니다. 2021.11.24 -->
+<!-- 영문 설명 부분들 적절히 변경 완료했습니다. 2021.11.25 -->
 
                 {% block main_area %}
                 {% endblock %}
@@ -38,7 +38,7 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Seoul trash can search service.</h1>
+                            <h1 class="mb-5">Providing Location of Seoul Street Trash Cans</h1>
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@
                                     <img src="/static/image/쓰레기통.png" width="100" height="100">
                                 </button>
                             </div>
-                            <h3>Find the trash can</h3>
-                            <p class="lead mb-0">Finds trash cans near the selected location!</p>
+                            <h3>Find the trash cans</h3>
+                            <p class="lead mb-0">Find the trash cans near the selected location!</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -97,15 +97,15 @@
                 <div class="row g-0">
                     <div class="col-lg-6 text-white showcase-img" style="background-image: url('/static/image/Trash_img2.jpg')"></div>
                     <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Solving problems related to trash cans.</h2>
-                        <p class="lead mb-0">You can notify the manager of a broken or full trash can through the community feature. It is also possible to request the installation of an additional trash can.</p>
+                        <h2>Solving Trash Can Issue</h2>
+                        <p class="lead mb-0">You can notify the manager of a broken or full trash can through the community. It is also possible to request the installation of an additional trash can.</p>
                     </div>
                 </div>
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/static/image/Trash_img3.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Finding out where the trash can is needed.</h2>
-                        <p class="lead mb-0">Through analysis using seoul public data, we identify locations where trash cans are insufficient and promote new installations and relocations.</p>
+                        <h2>Finding Area of Trash Can Shortages</h2>
+                        <p class="lead mb-0">Finding out area of trash can shortages throughout public data analysis, then promote new placement and relocation </p>
                     </div>
                 </div>
             </div>
@@ -117,25 +117,25 @@
                     <div class="col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="/static/image/짱이오_오동혁.png" alt="..." />
-                            <h5>오동혁</h5>
+                            <h5>Donghyeok Oh</h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="/static/image/짱이오_이인희.png" alt="..." />
-                            <h5>이인희</h5>
+                            <h5>Inhee Lee</h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="/static/image/짱이오_장성훈.png" alt="..." />
-                            <h5>장성훈</h5>
+                            <h5>Seonghoon Jang</h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="/static/image/짱이오_장주연.png" alt="..." />
-                            <h5>장주연</h5>
+                            <h5>Jooyeon Jang</h5>
                         </div>
                     </div>
                 </div>
