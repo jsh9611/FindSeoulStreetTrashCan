@@ -1,5 +1,4 @@
 {% load socialaccount %}
-<!-- 수정 완료 2021.11.24 -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class = "container">
@@ -10,7 +9,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <!-- 빈 칸 -->
+            <!-- 11.25 수정된 부분 -->
+            <li class = "nav-item">
+              <a class = "nav-link" href = "/map/">쓰레기통 확인</a>
+            </li>
+
+            <li class = "nav-item">
+              <a class = "nav-link" href = "/board/">커뮤니티</a>
+            </li>
+
+            <li class = "nav-item">
+              <a class = "nav-link" href = "https://www.notion.so/b1157a697bda4551a8cc7bb8aacc1058">데이터 분석 결과</a>
+            </li>
+
+            <li class = "nav-item">
+              <a class = "nav-link" href = "/english/">데이터 분석 결과</a>
+            </li>
 
 
           </ul>
@@ -49,7 +63,7 @@
                         <div class = "col-md-10">
                             <a role = "button" class = "btn btn-outline-dark btn-block btn-sm" href = "{% provider_login_url 'google' %}">구글 ID로 로그인</a>
                             <a role = "button" class = "btn btn-outline-dark btn-block btn-sm" href = "{% provider_login_url 'naver' %}">네이버 ID로 로그인</a>
-                           
+                            <a role = "button" class = "btn btn-outline-dark btn-block btn-sm" href = "{% provider_login_url 'kakao' %}">카카오톡 ID로 로그인</a>
                             
                         </div>
                     </div>
