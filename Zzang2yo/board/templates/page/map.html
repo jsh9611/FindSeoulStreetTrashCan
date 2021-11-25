@@ -12,12 +12,19 @@
 </head>
 <body>
     {% include 'board/navbar.html' %}
-<div id="map" style="width:100%;height:80%;"></div>
-<!-- <p><em>현재위치는 다음과 같습니다</em></p> -->
-<!-- <p><em>지도를 클릭하면 해당 위치의 위도경도 값을 보내줍니다</em></p> -->
-<br>
+<div id="map" style="width:100%;height:75%;"></div><br>
 
-<h3>찾으려는 위치를 지도에서 클릭하세요</h3>
+
+<div style="text-align: center;">
+    <h3>찾으려는 위치를 지도에서 클릭하세요</h3><br>
+    <form id="sample_form" method="post" action="results/" > 
+        {% csrf_token %}
+        <input type="text" name="lati" value=37.57041>
+        <input type="text" name="long" value=126.9921>
+        <input type="submit" value="전송하기">
+      </form>
+</div>
+
 <div id="clickLatlng"></div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=251b8f774a903203113d7451b7f27d68"></script>
@@ -61,13 +68,5 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
 });
 
 </script>
-
-<form id="sample_form" method="post" action="results/" > 
-    {% csrf_token %}
-    <input type="text" name="lati" value=37.57041>
-    <input type="text" name="long" value=126.9921>
-    <input type="submit" value="전송하기">
-  </form>
-
 </body>
 </html>
