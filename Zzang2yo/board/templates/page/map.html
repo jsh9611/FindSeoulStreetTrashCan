@@ -19,8 +19,8 @@
     <h3>찾으려는 위치를 지도에서 클릭하세요</h3><br>
     <form id="sample_form" method="post" action="results/" > 
         {% csrf_token %}
-        <input type="text" name="lati" value=37.57041>
-        <input type="text" name="long" value=126.9921>
+        <input type="hidden" name="lati" value=37.57041>
+        <input type="hidden" name="long" value=126.9921>
         <input type="submit" value="전송하기">
       </form>
 </div>
