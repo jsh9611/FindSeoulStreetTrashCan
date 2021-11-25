@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{% block head_title %}서울시 가로 쓰레기통 위치 제공 서비스{% endblock %}</title>
+    <title>{% block head_title %}Find Seoul Street Trash cans Location Service{% endblock %}</title>
     <link rel = "stylesheet" href = "{% static 'board/bootstrap/bootstrap.min.css' %}" media = "screen">
     <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
@@ -13,7 +13,7 @@
 <body>
     {% include 'board/navbar_eng.html' %}
 
-<div id="map" style="width:100%;height:70%; "></div><br>
+<div id="map" style="width:100%;height:70%; border:1px solid black;"></div><br>
 <div style="text-align: center;">
     <img src="/static/image/person2.png" width="50" height="50" align="middle">You
     <img src="/static/image/그림1.png" width="50" height="50" align="middle">Trash Can
