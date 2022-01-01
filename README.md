@@ -18,6 +18,5 @@ Django Framework를 활용해 웹을 만들었습니다.<br/>
 - 장성훈
 - 장주연
 
-자세한 프로젝트 진행과정을 Notion에 기록하였습니다.<br/>
+자세한 프로젝트 진행사항은 노션에서 확인하실 수 있습니다.
 https://ambition-plan.notion.site/3-5d261efec7b94f3cb1a02f31152944a4
-
